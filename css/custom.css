@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+body{
+    font-family: 'Almarai', sans-serif;
+}
+.text-blue{
+    color: #114274 !important;
+}
+.border-blue{
+    border-color: #114274;
+}
+.custom-role{
+    color:#114274;
+    width: 100%;
+    height: 100px;
+}
+
+.sub-link{
+    text-decoration: none;
+    transition: 1s;
+    color: #114274 !important;
+}
+
+.sub-link:hover{
+    text-decoration: none;
+    color: purple;
+    transition: 1s;
+}
