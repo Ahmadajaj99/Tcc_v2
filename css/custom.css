@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
 body{
     font-family: 'Almarai', sans-serif;
+    background-color: #114274;
 }
 .text-blue{
     color: #114274 !important;
