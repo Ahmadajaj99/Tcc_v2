@@ -26,3 +26,14 @@ body{
     color: purple;
     transition: 1s;
 }
+.sub-link-icons {
+    text-decoration:none;
+    transition: 1s;
+    color: black;
+}
+.sub-link-icons:hover {
+
+    text-decoration: underline;
+    transition: 1s;
+    color: purple;
+}
