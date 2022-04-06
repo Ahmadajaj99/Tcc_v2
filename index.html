@@ -8,94 +8,114 @@
     <link rel="stylesheet" href="css/custom.css">
     <link href="css/fontawesome/all.min.css"  rel="stylesheet">
     <title>لوحة التحكم</title>
-    <script  src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js//bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 col-sm-1 px-0 bg-white">
-                <div class="d-flex flex-column align-items-sm-start px-3 pt-2 pb-2 text-blue shadow min-vh-100">
-                    <span class="mx-auto fs-5 d-sm-inline">المعهد التقاني للحاسوب</span>
-                    <hr class="custom-role">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-2 pt-2 text-blue min-vh-100">
+                    <span class="fs-5 d-none d-sm-inline">المعهد التقاني للحاسوب</span>
+                <hr class="custom-role"/>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-blue">
+                            <i class="fa-solid fa-users me-2"></i> <span class="ms-1 d-none d-sm-inline">المتسخدمين</span> </a>
+                        <ul class="collapse hide nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li>
+                                
+                                <a href="#users-active" class="nav-link px-0  text-blue"> <span class="d-none d-sm-inline"><i class="fa-solid fa-user-check me-2"></i>المستخدمين الفعالين</span> </a>
+                            </li>
+                            <li class="w-100">
+                               
+                                <a href="#users-inactive" class="nav-link px-0  text-blue"> <span class="d-none d-sm-inline"> <i class="fa-solid fa-user-large-slash me-2"></i>المتسخدمين الغير فعالين</span> </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle  text-blue">
+                            <i class="fa-solid fa-book me-2"></i> <span class="ms-1 d-none d-sm-inline">المحاضرات</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle  text-blue">
+                            <i class="fa-solid fa-newspaper me-2"></i> <span class="ms-1 d-none d-sm-inline">الاعلانات</span> </a>
+                    </li>
 
-                    <!-- Menu -->
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-center">
-                        <li class="nav-item">
-                            <i class="fa-solid fa-users me-2"></i>
-                            <a class="text-blue dropdown-toggle text-decoration-none" data-bs-toggle="collapse" href="#Users">
-                                
-                                المستخدمين
-                                
-                               </a>
-                               <ul id="Users" class="list-unstyled sub-menu collapse ">
-                                <li class="nav-item mt-3 mb-3">
-                                    <i class="fa-solid fa-user-check me-2"></i>
-                                    <a class="sub-link " href="#">المستخدمون الفعالين</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <i class="fa-solid fa-user-large-slash me-2"></i>
-                                    <a class="sub-link " href="#">المستخدمون الغير فعالين</a>
-                                  </li>
-                                  
-                              </ul>
-                          </li>
-                          <li class="nav-item w-100 mt-3 mb-3">
-                            <i class="fa-solid fa-book me-2"></i>
-                              <a class="sub-link" href="#"> المحاضرات</a>
-                          </li>
-                          <li class="nav-item w-100">
-                            <i class="fa-solid fa-newspaper me-2"></i>
-                            <a class="sub-link" href="#"> الإعلانات</a>
-                        </li>
-                        <li class="nav-item w-100 mt-3 mb-3">
-                            <i class="fa-solid fa-file-lines me-2"></i>
-                            <a class="sub-link" href="#"> البرامج</a>
-                        </li>
-                        <li class="nav-item w-100">
-                            <i class="fa-solid fa-book-open-reader me-2"></i>
-                            <a class="sub-link" href="#"> المواد</a>
-                        </li>
-                        
-                        
-                    </ul>
-                </div>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle  text-blue">
+                            <i class="fa-solid fa-file-lines me-2"></i> <span class="ms-1 d-none d-sm-inline">البرامج</span> </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle  text-blue">
+                            <i class="fa-solid fa-book-open-reader me-2"></i> <span class="ms-1 d-none d-sm-inline">المواد</span> </a>
+                    </li>
+                </ul>
+                <hr>
+                
             </div>
-            <div class="col py-3">
-                <h4 class="text-white">لوحة التحكم</h4>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6>المستخدمين</h6>
-                            </div>
+        </div>
+        <div class="col py-3">
+            <div class="row">
+                <div class="mb-3">
+                    <div class="float-end">
+                        <a class="btn"  data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            <img src="img/user.jpg" class="rounded-circle" width="32" height="32">
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                            <li>
+                                
+                                <a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> أحمد عجاج </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-user"></i> الملف الشخصي </a></li>
+                            <hr class="dropdown-divider"/>
+                            <li><a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-key"></i> تسجيل الخروج </a></li>
+                          </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-newspaper me-2"></i>
+                            <span>المستخدمون</span>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6>المستخدمين</h6>
-                            </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-newspaper me-2 f-25"></i>
+                            <span>المستخدمون</span>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text text-blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut expedita saepe omnis ipsa nobis ducimus illum, quia architecto deleniti inventore repellendus vitae cum ea, mollitia minus! Porro est esse voluptates.</p>
-                                <h6>المستخدمين</h6>
-                            </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-newspaper me-2"></i>
+                            <span>المستخدمون</span>
                         </div>
                     </div>
-                    <table class="table table-hover mt-4">
+                </div>
+                <div class="col">
+                    <table class="table table-hover mt-4 shadow-1">
                         <thead>
-                            <tr class="table-primary">
-                                <td>ID</td>
-                                <td>الاسم</td>
+                            <tr class="table-light">
+                                <td>#</td>
+                                <td class="text-blue">الاسم</td>
                                 <td>البريد الالكتروني</td>
                                 <td>رقم الهاتف</td>
                                 <td>المستوى</td>
                                 <td>الحالة</td>
-                                <td>العمليات</td>
-                                <td>الغاء التفعيل/تفعيل</td>
+                                <td colspan=2>العمليات</td>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -123,10 +143,11 @@
                             </tr>
                         </tbody>
                       </table>
-                    
                 </div>
-            </div>
+                
+            
         </div>
     </div>
+</div>
 </body>
 </html>
