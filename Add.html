@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="css/fontawesome/all.min.css"  rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js//bootstrap.bundle.min.js"></script>
+    <title>إضافة مستخدم</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-2 pt-2 text-blue min-vh-100">
+                        <span class="fs-5 d-none d-sm-inline">المعهد التقاني للحاسوب</span>
+                    <hr class="custom-role"/>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-blue">
+                                <i class="fa-solid fa-users me-2"></i> <span class="ms-1 d-none d-sm-inline">المتسخدمين</span> </a>
+                            <ul class="collapse hide nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li>
+                                    
+                                    <a href="#users-active" class="nav-link px-0  text-blue"> <span class="d-none d-sm-inline"><i class="fa-solid fa-user-check me-2"></i>المستخدمين الفعالين</span> </a>
+                                </li>
+                                <li class="w-100">
+                                   
+                                    <a href="#users-inactive" class="nav-link px-0  text-blue"> <span class="d-none d-sm-inline"> <i class="fa-solid fa-user-large-slash me-2"></i>المتسخدمين الغير فعالين</span> </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle  text-blue">
+                                <i class="fa-solid fa-book me-2"></i> <span class="ms-1 d-none d-sm-inline">المحاضرات</span></a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle  text-blue">
+                                <i class="fa-solid fa-newspaper me-2"></i> <span class="ms-1 d-none d-sm-inline">الاعلانات</span> </a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle  text-blue">
+                                <i class="fa-solid fa-file-lines me-2"></i> <span class="ms-1 d-none d-sm-inline">البرامج</span> </a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle  text-blue">
+                                <i class="fa-solid fa-book-open-reader me-2"></i> <span class="ms-1 d-none d-sm-inline">المواد</span> </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    
+                </div>
+            </div>
+            <div class="col py-3">
+                <div class="row">
+                    <div class="mb-3">
+                        <div class="float-end">
+                            <a class="btn"  data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                <img src="img/user.jpg" class="rounded-circle" width="32" height="32">
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                                <li>
+                                    
+                                    <a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> أحمد عجاج </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-user"></i> الملف الشخصي </a></li>
+                                <hr class="dropdown-divider"/>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-key"></i> تسجيل الخروج </a></li>
+                              </ul>
+                        </div>
+                    
+                    </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
